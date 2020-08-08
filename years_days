@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class years_days {
+    private void Minutes(int n){
+        int y,d;
+        y=n/525600;
+        d=(n%525600)/1440;
+        System.out.println(n +" is approximately "+y+" years and "+d+" days");
+    }
+    public static void main(String[] args){
+        int m;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the minutes: ");
+        m=s.nextInt();
+        years_days min=new years_days(); 
+        min.Minutes(m);
+    }
+}
+
+
+
+
+
+#OUTPUT:
+enter the minutes:
+3456789                          //user input
+3456789 is approximately 6 years and 210 days
