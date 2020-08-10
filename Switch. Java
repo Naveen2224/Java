@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Switch {
+	public static void main(String [] args)
+	{
+		int  c;
+		System.out.println("pick  one of the following:\n1.Hii\n2.Hey \n3.Hello\n");
+		Scanner s = new Scanner(System.in);
+		c=s.nextInt();
+		switch(c)
+		{
+		case 1: System.out.println("you said 'Hii'");
+				break;
+		case 2: System.out.println("you said 'Hey'");
+				break;
+		case 3 : System.out.println("you said 'Hello'");
+				break;
+		default:System.out.println("Invalid");
+		}
+	}
+
+}
+
+
+#OUTPUT:
+pick  one of the following:
+1.Hii
+2.Hey 
+3.Hello
+
+1
+you said 'Hii'
