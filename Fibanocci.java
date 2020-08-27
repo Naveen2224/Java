@@ -6,13 +6,19 @@ public class Fibanocci {
         System.out.println("enter the no : ");
         Scanner s=new Scanner(System.in);
         n=s.nextInt();
-        System.out.println("the fibanocci series is : ");
-        System.out.print(a+" "+b);
-        for(int i=2;i<n;i++){
-            c=a+b;
-            System.out.print(" "+c);
-            a=b;
-            b=c;
+        if(n<=0)
+            System.out.println("Fibanoccci is not possible");
+        else if(n==1)
+            System.out.println("Fibanocci series is : "+a);
+        else{
+            System.out.println("the fibanocci series is : ");
+            System.out.print(a+" "+b);
+            for(int i=2;i<n;i++){
+                c=a+b;
+                System.out.print(" "+c);
+                a=b;
+                b=c;
+            }
         }
     }
 }
